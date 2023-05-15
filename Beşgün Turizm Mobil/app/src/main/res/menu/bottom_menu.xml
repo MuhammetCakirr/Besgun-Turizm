@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/anasayfa"
+        android:icon="@drawable/home2"
+        android:title="anasayfa" />
+
+    <item
+
+        android:id="@+id/profil"
+        android:icon="@drawable/profilefoto"
+        android:title="profil" />
+
+    <item
+        android:id="@+id/reserve"
+        android:icon="@drawable/reserve"
+        android:title="reserve" />
+
+</menu>

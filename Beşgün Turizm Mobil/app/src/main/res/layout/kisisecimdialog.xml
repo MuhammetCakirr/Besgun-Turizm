@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Kişi Seçimi"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/font4">
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:backgroundTint="@color/system_accent1_50"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yetişkin"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font4">
+                </TextView>
+
+               <ImageView
+                   android:layout_marginRight="20dp"
+
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ekle"
+                   android:layout_alignParentRight="true"
+                   android:id="@+id/yetiskinekle">
+
+               </ImageView>
+                <TextView
+                    android:id="@+id/yetiskinsayi"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/yetiskinekle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    >
+                </TextView>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_toLeftOf="@id/yetiskinsayi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/eksi"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/yetiskincikar">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:backgroundTint="@color/system_accent1_50"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Çocuk"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font4">
+                </TextView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginRight="20dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ekle"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/cocukekle">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <TextView
+                    android:id="@+id/cocuksayi"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/cocukekle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    >
+                </TextView>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_toLeftOf="@id/cocuksayi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/eksi"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/cocukcikar">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/onaylaa"
+            app:cardCornerRadius="5dp"
+            android:backgroundTint="@color/system_accent1_300"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Onayla"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font4">
+                </TextView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+       -
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

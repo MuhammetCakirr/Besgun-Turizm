@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TurizmAcentasi</string>
+    <string name="sifremi_unuttum"> <u>Şifremi Unuttum</u> </string>
+    <string name="kayit_ol"> Bir Hesabın yok mu? <u>Kayıt Ol!</u> </string>
+    <string name="giris_yap"> Zaten Bir hesabın var mı? <u>Giriş Yap!</u> </string>
+</resources>

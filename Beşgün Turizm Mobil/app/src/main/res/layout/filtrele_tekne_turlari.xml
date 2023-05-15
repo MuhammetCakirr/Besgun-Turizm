@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Filtrele"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/font4">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/cikisfiltrele"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/cikis">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardviewfiyataralıgı"
+                    app:cardCornerRadius="7dp"
+                    android:layout_margin="5dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/system_accent1_50">
+                    <LinearLayout
+                        android:background="@color/system_accent1_50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:id="@+id/fiyatagorefiltbtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/font4"
+                                android:text="Fiyat Aralığına Göre Filtrele"
+                                android:textColor="@color/GM2_grey_800"
+                                android:textSize="20sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="3dp"
+                                android:src="@drawable/asagiok">
+                            </ImageView>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:id="@+id/layoutfiyataralıgınagore"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <EditText
+                                        android:id="@+id/minfiyat"
+                                        android:textAlignment="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Min Fiyat"
+                                        android:backgroundTint="@color/white">
+                                    </EditText>
+                                </androidx.cardview.widget.CardView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_margin="20dp"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:id="@+id/maxfiyat"
+                                        android:textAlignment="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Max Fiyat"
+                                        android:backgroundTint="@color/white">
+
+                                    </EditText>
+
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardviewbolge"
+                    app:cardCornerRadius="7dp"
+                    android:layout_margin="5dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/system_accent1_50">
+                    <LinearLayout
+                        android:background="@color/system_accent1_50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:id="@+id/bolgefiltrebtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/font4"
+                                android:text="Vize Durumuna Göre Filtrele"
+                                android:textColor="@color/GM2_grey_800"
+                                android:textSize="20sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="3dp"
+                                android:src="@drawable/asagiok">
+                            </ImageView>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:id="@+id/layoutbolge"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkboxVizeli"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        >
+                                    </CheckBox>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Vizeli"
+                                        android:textColor="@color/black">
+
+                                    </TextView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkboxVizesiz"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        >
+                                    </CheckBox>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Vizesiz"
+                                        android:textColor="@color/black">
+
+                                    </TextView>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardviewkalkisnoktasi"
+                    app:cardCornerRadius="7dp"
+                    android:layout_margin="5dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/system_accent1_50">
+                    <LinearLayout
+                        android:background="@color/system_accent1_50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:id="@+id/kalkisnoktasifiltrebtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/font4"
+                                android:text="Kalkış Noktasına Göre Filtrele"
+                                android:textColor="@color/GM2_grey_800"
+                                android:textSize="20sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="3dp"
+                                android:src="@drawable/asagiok">
+                            </ImageView>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:id="@+id/layoutkalkisnoktasi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/istanbulkalkis"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        >
+                                    </CheckBox>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="İstanbul"
+                                        android:textColor="@color/black">
+
+                                    </TextView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/Ankarakalkis"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        >
+                                    </CheckBox>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Ankara"
+                                        android:textColor="@color/black">
+
+                                    </TextView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/izmirkalkis"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        >
+                                    </CheckBox>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="İzmir"
+                                        android:textColor="@color/black">
+
+                                    </TextView>
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/filtreleonaylabtn"
+                    app:cardCornerRadius="5dp"
+                    android:backgroundTint="@color/system_accent1_300"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uygula"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/font4">
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                -
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

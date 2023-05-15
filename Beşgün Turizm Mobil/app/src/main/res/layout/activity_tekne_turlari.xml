@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.TekneTurlariActivity">
+
+    <ScrollView
+        android:background="@color/system_neutral1_50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/gemituru" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:background="@color/system_accent1_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/turadi"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/font5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+
+                            android:text="Antalya Tekne Turu"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/konum"
+                            android:layout_gravity="center">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/guzergah"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/font5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+
+                            android:text="Antalya Tekne Turu"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/tl">
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/fiyat"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/font5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Kişi Başı 699 TL"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/tarih"
+                            android:layout_gravity="center">
+
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/tarih"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/font5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="25 Haziran 2023 - 29 Haziran 2023"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rezislemleri"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/system_accent1_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/font5"
+                        android:gravity="center"
+                        android:text="Rezervasyon İşlemleri"
+                        android:textColor="@color/GM2_grey_800"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/sagok">
+
+                    </ImageView>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:id="@+id/genelturlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:padding="5dp"
+                        android:id="@+id/turprogramibtn"
+                        android:background="@color/system_accent1_50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/font5"
+                            android:text="Tur Programı"
+                            android:textColor="@color/GM2_grey_800"
+                            android:textSize="20sp" />
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/asagiok"
+                            android:layout_alignParentRight="true">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:background="@color/system_accent1_50"
+                        android:id="@+id/layoutturprogrami"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_side"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/birincigunbaslik"
+                                android:fontFamily="@font/font5"
+                                android:textStyle="bold"
+                                android:text="1.Gün "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/birincigunparagraf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="İstanbul Yeni Havalimanı Dış Hatlar Gidiş Terminali’nde Air Arabia Hava Yolları kontuarı önünde SAAT 20:00’de check in işlemlerimizi yaptırıyoruz. Pasaport ve gümrük işlemlerinin ardından Air Arabia Hava Yolları G9 288 numaralı uçuşu ile saat 23:40’ta  Dubai’ye hareket. Uçakta gece yolculuğu. "
+                                android:textAlignment="center"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_side"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/ikincigunbaslik"
+                                android:fontFamily="@font/font5"
+                                android:textStyle="bold"
+                                android:text="2.Gün Dubai / 25 Haziran 2023"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/ikincigunbaslikparagraf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="İstanbul Yeni Havalimanı Dış Hatlar Gidiş Terminali’nde Air Arabia Hava Yolları kontuarı önünde SAAT 20:00’de check in işlemlerimizi yaptırıyoruz. Pasaport ve gümrük işlemlerinin ardından Air Arabia Hava Yolları G9 288 numaralı uçuşu ile saat 23:40’ta  Dubai’ye hareket. Uçakta gece yolculuğu. "
+                                android:textAlignment="center"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/border_side"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/ucuncugunbaslik"
+                                android:fontFamily="@font/font5"
+                                android:textStyle="bold"
+                                android:text="3.Gün Dubai / 26 Haziran 2023"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/ucuncugunparagraf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="İstanbul Yeni Havalimanı Dış Hatlar Gidiş Terminali’nde Air Arabia Hava Yolları kontuarı önünde SAAT 20:00’de check in işlemlerimizi yaptırıyoruz. Pasaport ve gümrük işlemlerinin ardından Air Arabia Hava Yolları G9 288 numaralı uçuşu ile saat 23:40’ta  Dubai’ye hareket. Uçakta gece yolculuğu. "
+                                android:textAlignment="center"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/border_side"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/dorduncugunbaslik"
+                                android:fontFamily="@font/font5"
+                                android:textStyle="bold"
+                                android:text="4.Gün Dubai / 27 Haziran 2023"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/dorduncugunparagraf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="İstanbul Yeni Havalimanı Dış Hatlar Gidiş Terminali’nde Air Arabia Hava Yolları kontuarı önünde SAAT 20:00’de check in işlemlerimizi yaptırıyoruz. Pasaport ve gümrük işlemlerinin ardından Air Arabia Hava Yolları G9 288 numaralı uçuşu ile saat 23:40’ta  Dubai’ye hareket. Uçakta gece yolculuğu. "
+                                android:textAlignment="center"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_side"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/besincigunbaslik"
+                                android:fontFamily="@font/font5"
+                                android:textStyle="bold"
+                                android:text="5.Gün Dubai / 28 Haziran 2023"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/besincigunparagraf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="İstanbul Yeni Havalimanı Dış Hatlar Gidiş Terminali’nde Air Arabia Hava Yolları kontuarı önünde SAAT 20:00’de check in işlemlerimizi yaptırıyoruz. Pasaport ve gümrük işlemlerinin ardından Air Arabia Hava Yolları G9 288 numaralı uçuşu ile saat 23:40’ta  Dubai’ye hareket. Uçakta gece yolculuğu. "
+                                android:textAlignment="center"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:id="@+id/genelsartlargenel"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:padding="5dp"
+                        android:id="@+id/genelsartlarbtn"
+                        android:background="@color/system_accent1_50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/font5"
+                            android:text="Genel Şartlar"
+                            android:textColor="@color/GM2_grey_800"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:background="@color/system_accent1_50"
+                        android:id="@+id/layoutgenelsartlar"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_side"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/font5"
+                                android:textStyle="bold"
+                                android:text="Ücrete Dahil Olan Hizmetler"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                            <LinearLayout
+
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:fontFamily="@font/font5"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/Gray"
+                                    android:textSize="12sp"
+                                    android:text="1-)Belirtilen Otellerde Konaklama (Otellerde 5 gece yarım pansiyon konaklama)"/>
+
+                                <TextView
+                                    android:fontFamily="@font/font5"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/Gray"
+                                    android:textSize="12sp"
+                                    android:text="2-)Lüks Otobüsler İle Ulaşım (Kişi Sayısına Göre Araç Değişebilmektedir.)">
+
+                                </TextView>
+                                <TextView
+                                    android:fontFamily="@font/font5"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/Gray"
+                                    android:textSize="12sp"
+                                    android:text="3-)Rehberlik Hizmetleri">
+
+                                </TextView>
+                                <TextView
+                                    android:fontFamily="@font/font5"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/Gray"
+                                    android:textSize="12sp"
+                                    android:text="4-)Zorunlu Seyahat Sigortası">
+
+                                </TextView>
+                                <TextView
+
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/Gray"
+                                    android:fontFamily="@font/font5"
+                                    android:textSize="12sp"
+                                    android:text="5-)İkramlar(Araç İçi Bardak Su)">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_side"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/font5"
+                                android:textStyle="bold"
+                                android:text="Ücrete Dahil Olmayan Hizmetler"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp"
+                                android:text="1-)Müze Ören Yeri Giriş Ücretleri"/>
+
+
+                            <TextView
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp"
+                                android:text="2-)Programda Belirtilmeyen Yemekler">
+
+                            </TextView>
+                            <TextView
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp"
+                                android:text="3-)Öğle Yemekleri, İçecekler">
+
+                            </TextView>
+                            <TextView
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp"
+                                android:text="4-)Ekstra Turlar">
+
+                            </TextView>
+                            <TextView
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp"
+                                android:text="5-)Kişisel Harcamalar">
+
+                            </TextView>
+                            <TextView
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp"
+                                android:text="6-)Tekne Turu Ücretleri">
+
+                            </TextView>
+                            <TextView
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp"
+                                android:text="7-)Müze Kart">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

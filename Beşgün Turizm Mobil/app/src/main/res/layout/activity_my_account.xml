@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.MyAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/profilfoto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/back"></ImageView>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/linearid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/font5"
+                    android:id="@+id/kullaniciadsoyad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hesabım">
+                </TextView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:background="@color/side_fps_button_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/Gray"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="İsim"
+                            android:fontFamily="@font/font2"
+                            >
+                        </TextView>
+
+                        <EditText
+                            android:background="@color/white"
+                            android:textSize="17dp"
+                            android:id="@+id/kullaniciisim"
+                            android:textColor="@color/black"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Muhammet"
+                            android:fontFamily="@font/font3"
+                            >
+                        </EditText>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/Gray"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Soyisim"
+                        android:fontFamily="@font/font2"
+                        >
+                    </TextView>
+
+                    <EditText
+                        android:textSize="17dp"
+                        android:id="@+id/kullanicisoyisim"
+                        android:textColor="@color/black"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Çakır"
+                        android:fontFamily="@font/font3"
+                        android:background="@color/white"
+                        >
+                    </EditText>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginLeft="7dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/calendar"
+                        android:id="@+id/dogumt">
+
+                    </ImageView>
+                    <LinearLayout
+                        android:id="@+id/dogumtbtn"
+                        android:layout_toRightOf="@id/dogumt"
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/Gray"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Doğum Tarihi"
+                            android:fontFamily="@font/font2"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:background="@color/white"
+                            android:textSize="17dp"
+                            android:id="@+id/kullanicidogumtarihi"
+                            android:textColor="@color/black"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="28/10/2003"
+                            android:fontFamily="@font/font3"
+                            >
+                        </TextView>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginLeft="7dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/apple"
+                        android:id="@+id/telno">
+                    </ImageView>
+                    <LinearLayout
+                        android:layout_toRightOf="@id/telno"
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/Gray"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Telefon Numarası"
+                            android:fontFamily="@font/font2"
+                            >
+                        </TextView>
+
+                        <EditText
+                            android:textSize="17dp"
+                            android:id="@+id/kullanicitelno"
+                            android:textColor="@color/black"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="05454462969"
+                            android:fontFamily="@font/font3"
+                            android:background="@color/white"
+                            >
+                        </EditText>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginLeft="7dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/gmail"
+                        android:id="@+id/gmail">
+                    </ImageView>
+                    <LinearLayout
+                        android:layout_toRightOf="@id/gmail"
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/Gray"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="E-posta Adresi"
+                            android:fontFamily="@font/font2"
+                            >
+                        </TextView>
+
+                        <EditText
+                            android:textSize="17dp"
+                            android:id="@+id/kullanicieposta"
+                            android:textColor="@color/black"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="mamicakir30@gmail.com"
+                            android:fontFamily="@font/font3"
+                            android:background="@color/white"
+                            >
+                        </EditText>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginLeft="7dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/sifre"
+                        android:id="@+id/sifre">
+                    </ImageView>
+                    <LinearLayout
+                        android:layout_toRightOf="@id/sifre"
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/Gray"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Şifre"
+                            android:fontFamily="@font/font2"
+                            >
+                        </TextView>
+
+                        <EditText
+                            android:textSize="17dp"
+                            android:id="@+id/kullanicisifre"
+                            android:textColor="@color/black"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Muhammet123"
+                            android:fontFamily="@font/font3"
+                            android:background="@color/white"
+                            >
+                        </EditText>
+                    </LinearLayout>
+                    <ImageView
+
+                        android:layout_marginRight="7dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/hide"
+                        android:id="@+id/sifregoster">
+                    </ImageView>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/guncellebtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/system_accent1_50"
+                app:cardCornerRadius="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/font4"
+                    android:text="Güncelle"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/otelfoto"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/otel">
+                </ImageView>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/otelad"
+                android:layout_margin="9dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/font3"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bodrum Park Oteli">
+
+            </TextView>
+            <RelativeLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/konumfoto"
+
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/konum2">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/otelkonum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/konumfoto"
+                    android:fontFamily="@font/font5"
+                    android:text="Bodrum,Muğla"
+                    android:textColor="@color/Gray"
+                    android:textSize="15sp"></TextView>
+                <androidx.cardview.widget.CardView
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/system_accent1_700">
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white"
+                        android:id="@+id/otelpuan"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8.2">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/hotel">
+                </ImageView>
+                <TextView
+                    android:id="@+id/tema"
+                    android:fontFamily="@font/font5"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/Gray"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ultra her şey dahil">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/night">
+                </ImageView>
+                <TextView
+                    android:id="@+id/kacgun"
+                    android:fontFamily="@font/font5"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/Gray"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 gün 1 gece">
+                </TextView>
+            </LinearLayout>
+            
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="@color/system_accent1_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/btndetay"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/otelilerle"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/sagok">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <TextView
+                        android:id="@+id/otelfiyat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/otelilerle"
+                        android:text="16.245 TL"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

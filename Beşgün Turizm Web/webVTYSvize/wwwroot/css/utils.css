@@ -1,0 +1,349 @@
+/* Tatil Temalarý 1 */
+main .tatilTemalari1 {
+    background-image: url('../img/temaBesYildizli.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .tatilTemalari1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .tatilTemalari1 * {
+        z-index: 5;
+    }
+
+/* Tatil Temalarý 2 */
+main .tatilTemalari2 {
+    background-image: url('../img/temaBalayi.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .tatilTemalari2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .tatilTemalari2 * {
+        z-index: 5;
+    }
+
+/* Tatil Temalarý 3 */
+main .tatilTemalari3 {
+    background-image: url('../img/temaDeniziOlan.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .tatilTemalari3::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .tatilTemalari3 * {
+        z-index: 5;
+    }
+
+/* Tatil Temalarý 4 */
+main .tatilTemalari4 {
+    background-image: url('../img/temaTarihi.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .tatilTemalari4::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .tatilTemalari4 * {
+        z-index: 5;
+    }
+
+/* Tatil Temalarý 5 */
+main .tatilTemalari5 {
+    background-image: url('../img/temaBalayi.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .tatilTemalari5::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .tatilTemalari5 * {
+        z-index: 5;
+    }
+
+/* Popüler Bölgeler Alanya */
+main .populerBolgelerAlanya {
+    background-image: url('../img/populerAlanya.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .populerBolgelerAlanya::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .populerBolgelerAlanya * {
+        z-index: 5;
+    }
+
+/* Popüler Bölgeler Alaçatý */
+main .populerBolgelerAlacati {
+    background-image: url('../img/populerAlacati.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .populerBolgelerAlacati::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .populerBolgelerAlacati * {
+        z-index: 5;
+    }
+
+/* Popüler Bölgeler Bodrum */
+main .populerBolgelerBodrum {
+    background-image: url('../img/populerBodrum.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .populerBolgelerBodrum::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .populerBolgelerBodrum * {
+        z-index: 5;
+    }
+
+/* Popüler Bölgeler Çanakkale */
+main .populerBolgelerCanakkale {
+    background-image: url('../img/populerCanakkale.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .populerBolgelerCanakkale::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .populerBolgelerCanakkale * {
+        z-index: 5;
+    }
+
+/* Popüler Bölgeler Didim */
+main .populerBolgelerDidim {
+    background-image: url('../img/populerDidim.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .populerBolgelerDidim::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .populerBolgelerDidim * {
+        z-index: 5;
+    }
+
+/* Popüler Bölgeler Fethiye */
+main .populerBolgelerFethiye {
+    background-image: url('../img/populerFethiye.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .populerBolgelerFethiye::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .populerBolgelerFethiye * {
+        z-index: 5;
+    }
+
+/* Popüler Bölgeler Kapadokya */
+main .populerBolgelerKapadokya {
+    background-image: url('../img/populerKapadokya.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .populerBolgelerKapadokya::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .populerBolgelerKapadokya * {
+        z-index: 5;
+    }
+
+/* Popüler Bölgeler Kuþadasý */
+main .populerBolgelerKusadasi {
+    background-image: url('../img/populerKusadasi.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .populerBolgelerKusadasi::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .populerBolgelerKusadasi * {
+        z-index: 5;
+    }
+
+/* Popüler Bölgeler Pamukkale */
+main .populerBolgelerPamukkale {
+    background-image: url('../img/populerPamukkale.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    color: #fff;
+    position: relative;
+}
+
+    main .populerBolgelerPamukkale::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    main .populerBolgelerPamukkale * {
+        z-index: 5;
+    }

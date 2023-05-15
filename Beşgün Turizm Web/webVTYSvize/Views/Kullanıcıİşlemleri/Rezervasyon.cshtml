@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utils.css">
+    <title>Rezervasyon</title>
+</head>
+<body>
+
+  <header class="main-header-otellerDetay secili-active">
+     <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+            <div class="container-fluid">
+                <h1 class="brand">
+                    <i class="fa-solid fa-plane-departure" style="color: #1a1a19;"></i>
+                </h1>
+              <a class="navbar-brand ms-3" asp-action="Anasayfa" asp-controller="Anasayfa">Beşgün Turizm</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link"  asp-controller="Anasayfa" asp-action="Anasayfa" >Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="Hizmetler">Hizmetler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="Oteller">Oteller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="TekneTurları">Tekne Turları</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="YurtdisiTurlar">Yurtdışı Turlar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="İletişim">İletişim</a>
+                        </li>
+                    </ul>
+                    
+                    <a asp-controller="Kullanıcıİşlemleri" asp-action="Kayıt" class="btn border border-dark rounded-pill ms-auto me-2"><i class="fa-solid fa-arrow-right-to-bracket me-2"></i>Giriş Yap ya da Kayıt Ol</a>
+                    <a asp-controller="Kullanıcıİşlemleri" asp-action="Ayarlar" class="btn border border-dark rounded-circle me-2"><i class="fa-solid fa-gear"></i></a>
+                    
+                </div>
+            </div>
+        </nav>
+
+   <div class="content-otellerDetay">
+      <h1>Rezervasyon Yap!</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+          <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </symbol>
+          </svg>
+
+          <div class="alert alert-warning d-flex align-items-center mt-3" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+            <div>
+              Giriş ve Çıkış Tarihi Yalnızca Otel Rezervasyonlarında Seçilmektedir. Tekne Turları ve Yurtdışı Turlarında Tarihler belirlidir. 
+            </div>
+          </div>
+
+       
+          <div class="d-flex">
+              <form asp-action="Rezervasyon" asp-controller="Kullanıcıİşlemleri" method="post">
+
+                 <!-- Kişi sayısı -->
+                 <div class="input-group dropdown m-3 p-5">
+                   <button class="btn btn-light dropdown-toggle btn_drop" type="button"  data-bs-auto-close="false" data-bs-toggle="dropdown" style="width: 18rem;">Kişi Sayısı</button>
+                   <ul class="dropdown-menu p-2 dropdown-content">
+                     <div class="dropdown-item">
+                       <p>Yetişkin Sayısı</p>
+                       <div class="d-flex justify-content-between text-center align-items-center">
+                         <button type="button" class="btn btn-outline-warning btn_yetiskinArti">+</button>
+                         <input class="yetiskinSayisi input-value" name="yetiskinSayisi" id="yetiskinSayisi" value="1" />
+                         <button type="button" class="btn btn-outline-warning btn_yetiskinEksi">-</button>
+                       </div>
+                     </div>
+                     <div class="dropdown-item">
+                       <p>Çocuk Sayısı</p>
+                       <div class="d-flex justify-content-between text-center align-items-center">
+                         <button type="button" class="btn btn-outline-warning btn_cocukArti">+</button>
+                         <input class="cocukSayisi input-value" name="cocukSayisi" id="cocukSayisi" value="0"/>
+                         <button type="button" class="btn btn-outline-warning btn_cocukEksi">-</button>
+                         </div>
+                     </div>
+                   </ul>
+                 </div>
+        
+          
+                 <input type="hidden" name="bilgiler" value="@ViewBag.id?@ViewBag.hizmetTuru?@ViewBag.girisTarihi?@ViewBag.cikisTarihi">
+                 <div class="d-grid gap-2 col-6 mx-auto">
+                     <button type="submit" class="btn btn-outline-dark p-2 my-2 mx-auto">Rezervasyonu Tamamla!</button>
+                 </div>
+
+              </form>
+               
+
+          </div>
+
+      <div class="d-flex justify-content-around align-items-center">
+        <div class="formlarYetiskin" id="formlarYetiskin"></div>
+        <div class="formlarCocuk"></div>
+      </div>
+    </div>
+
+       
+  </main>
+
+   
+   <footer class="footer bg-light mt-2">
+        <div class="container">
+            <div class="row g-2 p-2 d-flex justify-content-center">
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <h4><i class="fa-solid fa-chevron-down fa-2x me-2"></i>Popüler bölgeler</h4>
+                    <p class="text-muted mb-0">Antalya Otelleri</p>
+                    <p class="text-muted mb-0">Alanya Otelleri</p>
+                    <p class="text-muted mb-0">Ayvalık Otelleri</p>
+                    <p class="text-muted mb-0">Kemer Otelleri</p>
+                    <p class="text-muted mb-0">Kuşadası Otelleri</p>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <h4><i class="fa-solid fa-chevron-down fa-2x me-2"></i>Keşfet!</h4>
+                    <div class="row"><a asp-controller="Anasayfa" asp-action="Oteller" class="link-secondary"><i class="fa-solid fa-hotel me-2"></i>Otel</a></div>
+                    <div class="row"><a asp-controller="Anasayfa" asp-action="TekneTurları" class="link-secondary"><i class="fa-solid fa-ship me-2"></i>Tekne Turları</a></div>
+                    <div class="row"><a asp-controller="Anasayfa" asp-action="YurtdisiTurlar" class="link-secondary"><i class="fa-solid fa-plane me-2"></i>Yurtdışı Turlar</a></div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <h4><i class="fa-solid fa-chevron-down fa-2x me-2"></i>Kurumsal</h4>
+                    <div class="row"><a asp-controller="Anasayfa" asp-action="İletişim" class="link-secondary mb-3"><i class="fa-solid fa-phone me-2"></i>İletişim</a></div>
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <h4><i class="fa-solid fa-chevron-down fa-2x me-2"></i>BeşGün Turizm</h4>
+                    <p>Copyright © 2023 BeşGün Turistik Servisleri A.Ş. Tüm hakları saklıdır. Kullanım Sözleşmesi | Gizlilik Sözleşmesi | Kişisel Verilerin Korunması ve İşlenmesi Politikası</p>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="../js/rezervasyonYap.js"></script>
+
+</body>
+</html>

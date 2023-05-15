@@ -1,0 +1,505 @@
+:root {
+    --white: #fff;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --dark: #343a40;
+    --light: #f8f9fa;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Ana Sayfa */
+.secili-active li .active {
+    border-bottom: 2px solid var(--danger);
+}
+
+.main-header {
+    background-image: url('../img/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+    .main-header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6)
+    }
+
+    .main-header * {
+        z-index: 5;
+    }
+
+    .main-header li:hover {
+        border-bottom: 1px solid var(--danger);
+    }
+
+    .main-header .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .main-header .fontFamily {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .main-header .content h1 {
+        font-size: 6rem;
+    }
+
+main .boxshadow:hover {
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.5);
+    transition: box-shadow .6s;
+}
+
+main .arkaPlanBuyuk {
+    background-image: url('../img/bg-2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: #fff;
+    position: relative;
+}
+
+    main .arkaPlanBuyuk::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6)
+    }
+
+    main .arkaPlanBuyuk * {
+        z-index: 5;
+    }
+
+main .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+footer a {
+    color: var(--dark);
+}
+
+    footer a:hover {
+        color: var(--warning);
+    }
+
+/* Hizmetler */
+.main-header-hizmetler {
+    background-image: url('../img/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 70vh;
+    color: #fff;
+    position: relative;
+}
+
+    .main-header-hizmetler::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6)
+    }
+
+    .main-header-hizmetler * {
+        z-index: 5;
+    }
+
+    .main-header-hizmetler li:hover {
+        border-bottom: 1px solid var(--danger);
+    }
+
+    .main-header-hizmetler .content-hizmetler {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+/* İletişim */
+.main-header-iletisim {
+    background-image: url('../img/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 70vh;
+    color: #fff;
+    position: relative;
+}
+
+    .main-header-iletisim::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6)
+    }
+
+    .main-header-iletisim * {
+        z-index: 5;
+    }
+
+    .main-header-iletisim li:hover {
+        border-bottom: 1px solid var(--danger);
+    }
+
+    .main-header-iletisim .content-iletisim {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+/* Oteller */
+.main-header-oteller {
+    background-image: url('../img/otelArkaPlan.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: #fff;
+    position: relative;
+}
+
+    .main-header-oteller::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    .main-header-oteller * {
+        z-index: 5;
+    }
+
+    .main-header-oteller li:hover {
+        border-bottom: 1px solid var(--danger);
+    }
+
+    .main-header-oteller .content-oteller {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+.filter-box {
+    border-bottom: 1px solid #dee2e6;
+}
+
+    .filter-box .card-header {
+        border-bottom: 0;
+        border-radius: 0;
+    }
+
+.menu {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+    .menu li {
+        margin-bottom: 3px;
+    }
+
+        .menu li > a {
+            color: #51585e;
+            text-decoration: none;
+        }
+
+.scroll {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.card-header a {
+    text-decoration: none;
+    color: #000;
+}
+
+.fa-chevron-down {
+    float: right;
+    font-size: 14px;
+    color: #9da1a7;
+    margin-top: 5px;
+}
+
+.checkbox-btn {
+    position: relative;
+}
+
+    .checkbox-btn input {
+        position: absolute;
+        opacity: 0;
+    }
+
+        .checkbox-btn input:checked ~ .btn {
+            background-color: #0d6efd;
+            color: #fff;
+        }
+
+.btn-light {
+    background-color: #fff;
+    border-color: #dee2e6;
+    color: #212529;
+}
+
+/* Tekne Turları */
+.main-header-tekneTurlari {
+    background-image: url('../img/gemiTurlariArkaPlan.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: #fff;
+    position: relative;
+}
+
+    .main-header-tekneTurlari::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    .main-header-tekneTurlari * {
+        z-index: 5;
+    }
+
+    .main-header-tekneTurlari li:hover {
+        border-bottom: 1px solid var(--danger);
+    }
+
+    .main-header-tekneTurlari .content-tekneTurlari {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+/* Yurtdisi Turlar */
+.main-header-yurtdisiTurlar {
+    background-image: url('../img/yurtdisiTurlarArkaPlan.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: #fff;
+    position: relative;
+}
+
+    .main-header-yurtdisiTurlar::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    .main-header-yurtdisiTurlar * {
+        z-index: 5;
+    }
+
+    .main-header-yurtdisiTurlar li:hover {
+        border-bottom: 1px solid var(--danger);
+    }
+
+    .main-header-yurtdisiTurlar .content-yurtdisiTurlar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+/* Kayıt */
+.main-header-kayit {
+    background-image: url('../img/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+    .main-header-kayit::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6)
+    }
+
+    .main-header-kayit * {
+        z-index: 5;
+    }
+
+    .main-header-kayit .content-kayit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+/* Ayarlar */
+.main-header-ayarlar {
+    background-image: url('../img/ayarlarArkaPlan.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: bottom;
+    height: 200vh;
+    color: #fff;
+    position: relative;
+}
+
+    .main-header-ayarlar::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6)
+    }
+
+    .main-header-ayarlar * {
+        z-index: 5;
+    }
+
+header div .active-hesabim {
+    background-color: #F0F0F0;
+    border-radius: 2px;
+}
+
+header div .active-rezervasyon {
+    background-color: #F0F0F0;
+    border-radius: 2px;
+}
+
+header div .active-cikisYap {
+    background-color: #F0F0F0;
+    border-radius: 2px;
+}
+
+header div .active-hesabiSil {
+    background-color: #F0F0F0;
+    border-radius: 2px;
+}
+
+/* Oteller Detay */
+.main-header-otellerDetay {
+    background-image: url('../img/deneme.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 70vh;
+    color: #fff;
+    position: relative;
+}
+
+    .main-header-otellerDetay::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    .main-header-otellerDetay * {
+        z-index: 5;
+    }
+
+    .main-header-otellerDetay li:hover {
+        border-bottom: 1px solid var(--danger);
+    }
+
+    .main-header-otellerDetay .content-otellerDetay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+
+
+.input-value {
+    display: inline-block;
+    border: none;
+    outline: none;
+    font-size: 1em; /* içindeki sayı kadar büyüklük */
+    background-color: transparent;
+    padding: 0; /* içeriği sıfırla */
+    margin: 0; /* içeriği sıfırla */
+    text-align: center;
+    box-sizing: border-box; /* içeriğin boyutunu, padding ve border dahil hesaplamasını sağlar */
+    width: 100%;
+}
+
+.sun {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #FDB813;
+    border-radius: 50%;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+

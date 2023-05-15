@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.OteldetayActivity">
+
+
+    <ScrollView
+        android:background="@color/system_neutral1_50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/otel" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:background="@color/system_accent1_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/otelad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/font5"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:text="İstanbul Hilton Otel"
+                            android:textColor="@color/black"
+                            android:textSize="25sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_toLeftOf="@+id/otelkonum"
+                            android:src="@drawable/konum">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/otelkonum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/font5"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:text="İstanbul,Kağıthane"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:layout_toLeftOf="@+id/oteltema"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/hotel">
+                        </ImageView>
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:id="@+id/oteltema"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/font5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Kişi Başı 699 TL"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            />
+                        <androidx.cardview.widget.CardView
+                            android:layout_marginRight="10dp"
+                            android:layout_centerInParent="true"
+                            app:cardCornerRadius="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/system_accent1_700">
+                            <TextView
+
+                                android:paddingRight="10dp"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/white"
+                                android:id="@+id/otelpuan"
+                                android:textSize="18sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8.2">
+                            </TextView>
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:id="@+id/odasecgenel"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:padding="5dp"
+                        android:id="@+id/odasecbtn"
+                        android:background="@color/system_accent1_50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/font5"
+                            android:text="Oda Seçimi ve Rezervasyon"
+                            android:textColor="@color/GM2_grey_800"
+                            android:textSize="20sp" />
+
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutodasec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/system_accent1_50"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/border_side"
+                            android:orientation="vertical">
+
+
+
+                            <LinearLayout
+
+                                android:background="@drawable/border_side"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="130dp"
+                                    android:layout_height="130dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/standart"></de.hdodenhof.circleimageview.CircleImageView>
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:fontFamily="@font/font5"
+                                        android:text="Standart Oda"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:src="@drawable/catalkasik">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="10dp"
+                                            android:fontFamily="@font/font5"
+                                            android:text="Oda Kahvaltı">
+
+                                        </TextView>
+                                    </LinearLayout>
+                                    <RelativeLayout
+                                        android:id="@+id/standartbtn"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/ok1"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/sagok">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:id="@+id/standartodafiyat"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_toLeftOf="@+id/ok1"
+                                            android:fontFamily="@font/font5"
+                                            android:text="699 TL"
+                                            android:textColor="@color/black"
+                                            android:textSize="18dp">
+
+                                        </TextView>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:background="@drawable/border_side"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="130dp"
+                                    android:layout_height="130dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/luks"></de.hdodenhof.circleimageview.CircleImageView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:fontFamily="@font/font5"
+                                        android:text="Manzaralı Oda"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:src="@drawable/catalkasik">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="10dp"
+                                            android:fontFamily="@font/font5"
+                                            android:text="Her şey">
+
+                                        </TextView>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:src="@drawable/sea">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="10dp"
+                                            android:fontFamily="@font/font5"
+                                            android:text="Manzara">
+
+                                        </TextView>
+                                    </LinearLayout>
+                                    <RelativeLayout
+                                        android:id="@+id/denizbtn"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/ok2"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/sagok">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:id="@+id/Manzaralıodafiyat"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_toLeftOf="@+id/ok2"
+                                            android:fontFamily="@font/font5"
+                                            android:text="1300 TL"
+                                            android:textColor="@color/black"
+                                            android:textSize="18dp">
+
+                                        </TextView>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_gravity="center"
+                                    android:layout_width="130dp"
+                                    android:layout_height="130dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/cokluks"></de.hdodenhof.circleimageview.CircleImageView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:fontFamily="@font/font5"
+                                        android:text="Suite Oda"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:src="@drawable/catalkasik">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="10dp"
+                                            android:fontFamily="@font/font5"
+                                            android:text="Ultra her şey">
+                                        </TextView>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:src="@drawable/sea">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="10dp"
+                                            android:fontFamily="@font/font5"
+                                            android:text="Deniz Manzarası">
+
+                                        </TextView>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:src="@drawable/bath">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="10dp"
+                                            android:fontFamily="@font/font5"
+                                            android:text="Jakuzi">
+
+                                        </TextView>
+                                    </LinearLayout>
+                                    <RelativeLayout
+                                        android:id="@+id/suiteodabtn"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/ok"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/sagok">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:id="@+id/suiteodafiyat"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_toLeftOf="@+id/ok"
+                                            android:fontFamily="@font/font5"
+                                            android:text="2000 TL"
+                                            android:textColor="@color/black"
+                                            android:textSize="18dp">
+
+                                        </TextView>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:id="@+id/genelsartlargenel"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:padding="5dp"
+                        android:id="@+id/genelsartlarbtn"
+                        android:background="@color/system_accent1_50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/font5"
+                            android:text="Genel Şartlar"
+                            android:textColor="@color/GM2_grey_800"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:background="@color/system_accent1_50"
+                        android:id="@+id/layoutgenelsartlar"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_side"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/font5"
+                                android:textStyle="bold"
+                                android:text="Ücrete Dahil Olan Hizmetler"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                            <LinearLayout
+
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:fontFamily="@font/font5"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/Gray"
+                                    android:textSize="12sp"
+                                    android:text="1-)Kahvaltı : Misafirler güne enerjik bir başlangıç yapmak için oteldeki kahvaltı hizmetinden ücretsiz olarak yararlanabilirler."/>
+
+                                <TextView
+                                    android:fontFamily="@font/font5"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/Gray"
+                                    android:textSize="12sp"
+                                    android:text="2-)Wi-Fi İnternet Erişimi : Misafirler internete erişmek istemeleri durumunda ek ücret ödemeleri gerekmez.">
+
+                                </TextView>
+                                <TextView
+                                    android:fontFamily="@font/font5"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/Gray"
+                                    android:textSize="12sp"
+                                    android:text="3-)Otelin Ortak Alanları : Otelin lobisi, dinlenme alanları, teras veya bahçe gibi ortak kullanım alanları misafirlere ücretsiz olarak sunulur. Misafirler bu alanlarda vakit geçirebilir ve dinlenebilirler.">
+
+                                </TextView>
+                                <TextView
+                                    android:layout_marginBottom="5dp"
+                                    android:fontFamily="@font/font5"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/Gray"
+                                    android:textSize="12sp"
+                                    android:text="4-)Otopark : misafirlerin araçlarını ücretsiz olarak park edebilecekleri otopark imkanı sunarlar.">
+
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_side"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/font5"
+                                android:textStyle="bold"
+                                android:text="Ücrete Dahil Olmayan Hizmetler"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp"
+                                android:text="1-)Mini Bar: Otel odasında bulunan mini barın içerisindeki içecekler ve atıştırmalıklar "/>
+
+
+                            <TextView
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp"
+                                android:text="2-)Oda Servisi: Otel odasına servis hizmeti genellikle ek ücrete tabidir. ">
+
+                            </TextView>
+                            <TextView
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp"
+                                android:text="3-)Spa ve Masaj Hizmetleri: Otellerin bünyesinde yer alan spa merkezleri ve masaj hizmetleri genellikle ücrete tabidir.">
+
+                            </TextView>
+                            <TextView
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp"
+                                android:text="4-)Özel Organizasyonlar ve Etkinlikler: Otellerde düzenlenen özel organizasyonlar, etkinlikler veya restoranlardaki özel menüler genellikle ek bir ücrete tabidir.">
+
+                            </TextView>
+                            <TextView
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Gray"
+                                android:fontFamily="@font/font5"
+                                android:textSize="12sp"
+                                android:text="5-)Yemeklerde Alınacak İçecekler">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.KayitOlActivity"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+
+                android:layout_gravity="center"
+                android:fontFamily="@font/font3"
+
+                android:gravity="center"
+                android:text="Kayıt Ol"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="12dp"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/kayitolisim"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="İsim"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:inputType="textPersonName"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="12dp"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/kayitolsoyisim"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Soyisim"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:inputType="textPersonName"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="12dp"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/gmail"
+                android:layout_margin="4dp"/>
+            <EditText
+                android:id="@+id/kayitoleposta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-posta Adresi"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:inputType="textEmailAddress"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="12dp"
+                tools:ignore="MissingConstraints">
+                <LinearLayout
+                    android:id="@+id/dogumtarihibtn"
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/tarihsembol"
+                        android:layout_margin="4dp"/>
+                    <EditText
+                        android:id="@+id/kayitoldogumtarihi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Doğum Tarihi"
+                        android:background="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:inputType="textEmailAddress"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="12dp"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/apple"
+                android:layout_margin="4dp"/>
+            <EditText
+                android:id="@+id/kayitoltelno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefon Numarası"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:inputType="phone|number"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="12dp"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/sifre"
+                android:layout_margin="4dp"/>
+            <EditText
+                android:id="@+id/kayitolsifre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Şifre"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/sifregoster"
+            android:layout_gravity="right|center"
+            android:layout_margin="4dp"/>
+    </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Red"
+                android:id="@+id/kayitoldurum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:text="Zaten Bu E-posta ile bir kullanıcı var."
+                android:fontFamily="@font/font5"
+                android:textSize="18sp">
+            </TextView>
+    <CheckBox
+        android:fontFamily="@font/font5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kullanım Şartları ve Gizlilik bildirimi'ni kabul ediyorum \nKişisel Verilerin Korunması ve Gizlilik Politikası'nı\nokudum."
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        tools:ignore="MissingConstraints" />
+    <CheckBox
+        android:fontFamily="@font/font5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fırsat ve kampayalardan haberdar olmak istiyorum."
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/btngirisyap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:text="@string/giris_yap"
+                android:fontFamily="@font/font5"
+                android:textSize="18sp">
+            </TextView>
+    <Button
+        android:id="@+id/btnkayitol"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kayıt Ol"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

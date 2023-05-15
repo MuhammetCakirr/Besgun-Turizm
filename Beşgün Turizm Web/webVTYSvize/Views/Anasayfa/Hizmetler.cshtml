@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utils.css">
+    <title>Anasayfa</title>
+</head>
+<body>
+    
+    <header class="main-header-hizmetler secili-active">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+            <div class="container-fluid">
+                <h1 class="brand">
+                    <i class="fa-solid fa-plane-departure" style="color: #1a1a19;"></i>
+                </h1>
+                <a class="navbar-brand ms-3" asp-action="Anasayfa" asp-controller="Anasayfa">Beşgün Turizm</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link "  asp-controller="Anasayfa" asp-action="Anasayfa" >Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" asp-controller="Anasayfa" asp-action="Hizmetler">Hizmetler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="Oteller">Oteller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="TekneTurları">Tekne Turları</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="YurtdisiTurlar">Yurtdışı Turlar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="İletişim">İletişim</a>
+                        </li>
+                    </ul>
+                    
+                    <a asp-controller="Kullanıcıİşlemleri" asp-action="Kayıt" class="btn border border-dark rounded-pill ms-auto me-2"><i class="fa-solid fa-arrow-right-to-bracket me-2"></i>Giriş Yap ya da Kayıt Ol</a>
+                    <a asp-controller="Kullanıcıİşlemleri" asp-action="Ayarlar" class="btn border border-dark rounded-circle me-2"><i class="fa-solid fa-gear"></i></a>
+                    
+                </div>
+            </div>
+        </nav>
+
+        
+    <div class="content-hizmetler">
+      <h1>Hizmetlerimiz</h1>
+    </div>
+    </header>
+    
+   <main>
+    <div class="container my-4">
+      <div class="row d-flex justify-content-center align-items-center">
+
+        <div class="col-md-5 d-none d-md-block">
+          <div class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel" id="slider1">
+
+            <!-- resmin altındaki geçişler. -->
+            <ol class="carousel-indicators">
+              <li data-bs-target="#slider1" data-bs-slide-to="0" class=""></li>
+              <li data-bs-target="#slider1" data-bs-slide-to="1" class=""></li>
+              <li data-bs-target="#slider1" data-bs-slide-to="2" class="active" aria-current="true"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <!-- data-bs-interval="2000" (2 saniyede geç demek) -->
+              <div class="carousel-item" data-bs-interval="2000">
+                  <img src="../img/hizmetler1.png" class="d-block w-100" alt="">
+                  <!-- d-none d-md-block (md cihazın altına indiğinde başlık ve yazı gözükmeyecek) -->
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h2>Slide 1</h2> -->
+                  </div>
+              </div>
+                
+              <div class="carousel-item" data-bs-interval="4000">
+                  <img src="../img/hizmetler2.png" class="d-block w-100" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h2>Slide 2</h2> -->
+                  </div>
+              </div>
+                
+              <div class="carousel-item active" data-bs-interval="6000">
+                  <img src="../img/hizmetler3.png" class="d-block w-100" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h2>Slide 3</h2> -->
+                  </div>
+              </div>
+            </div>
+
+            <!-- sağ ve soldaki geçiş (ok) işaretleri -->
+            <a href="#slider1" class="carousel-control-prev" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slider1" class="carousel-control-next" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-7">
+          <div class="boxshadow">
+            <div class="card mb-2 shadow-sm">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../img/anaEkran.jpg" alt="" class="img-fluid rounded-start p-2">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Tekne Turları</h5>
+                            <p class="card-text">Eşsiz deniz maceralarıyla dolu unutulmaz tekne turları sunmaktadır. Kristal berraklığındaki suları keşfederek, güneşin sıcak dokunuşunu hissedip rüzgarın dansına eşlik ederken, misafirlerimize anılarla dolu bir deneyim yaşatıyoruz.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="boxshadow">
+            <div class="card mb-2 shadow-sm">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../img/anaEkran.jpg" alt="" class="img-fluid rounded-start p-2">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Yurtdışı Turlar</h5>
+                    <p class="card-text">Bizim turizm acentamız, unutulmaz yurt dışı turlarıyla sizleri hayal dünyasına davet ediyor. Size büyüleyici destinasyonlar sunarak, keşfetmek istediğiniz yeni kültürlerle dolu bir macera vaat ediyoruz.Bizimle hayatınızın en özel deneyimlerini yaşayın.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="boxshadow">
+            <div class="card mb-2 shadow-sm">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../img/anaEkran.jpg" alt="" class="img-fluid rounded-start p-2">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Otel Rezervasyonları</h5>
+                    <p class="card-text">Seyahat etmeyi sevenler için bir rüya gibi tatil deneyimleri sunuyoruz. Otel rezervasyonlarınızı tamamen sizin isteklerinize uygun şekilde düzenliyoruz. Lüks oteller, butik konaklamalar, şehir merkezindeki modern oteller veya doğa ile iç içe olan tesisler..</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+   
+   <footer class="footer bg-light mt-2">
+        <div class="container">
+            <div class="row g-2 p-2 d-flex justify-content-center">
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <h4><i class="fa-solid fa-chevron-down fa-2x me-2"></i>Popüler bölgeler</h4>
+                    <p class="text-muted mb-0">Antalya Otelleri</p>
+                    <p class="text-muted mb-0">Alanya Otelleri</p>
+                    <p class="text-muted mb-0">Ayvalık Otelleri</p>
+                    <p class="text-muted mb-0">Kemer Otelleri</p>
+                    <p class="text-muted mb-0">Kuşadası Otelleri</p>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <h4><i class="fa-solid fa-chevron-down fa-2x me-2"></i>Keşfet!</h4>
+                    <div class="row"><a asp-controller="Anasayfa" asp-action="Oteller" class="link-secondary"><i class="fa-solid fa-hotel me-2"></i>Otel</a></div>
+                    <div class="row"><a asp-controller="Anasayfa" asp-action="TekneTurları" class="link-secondary"><i class="fa-solid fa-ship me-2"></i>Tekne Turları</a></div>
+                    <div class="row"><a asp-controller="Anasayfa" asp-action="YurtdisiTurlar" class="link-secondary"><i class="fa-solid fa-plane me-2"></i>Yurtdışı Turlar</a></div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <h4><i class="fa-solid fa-chevron-down fa-2x me-2"></i>Kurumsal</h4>
+                    <div class="row"><a asp-controller="Anasayfa" asp-action="İletişim" class="link-secondary mb-3"><i class="fa-solid fa-phone me-2"></i>İletişim</a></div>
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <h4><i class="fa-solid fa-chevron-down fa-2x me-2"></i>BeşGün Turizm</h4>
+                    <p>Copyright © 2023 BeşGün Turistik Servisleri A.Ş. Tüm hakları saklıdır. Kullanım Sözleşmesi | Gizlilik Sözleşmesi | Kişisel Verilerin Korunması ve İşlenmesi Politikası</p>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    
+</body>
+</html>
+
+    
+
+
+
+
