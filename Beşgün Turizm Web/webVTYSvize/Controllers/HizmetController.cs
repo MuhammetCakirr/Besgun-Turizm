@@ -15,7 +15,6 @@ namespace webVTYSvize.Controllers
             _context = context;
         }
 
-
         public ActionResult OtelDetay(string bilgiler)
         {
             string[] veriler = bilgiler.Split('?');
@@ -33,6 +32,7 @@ namespace webVTYSvize.Controllers
             ViewBag.fiyatCarpan = gunSayisi.Days;
             return View(otel);
         }
+        
         public ActionResult TekneTurDetay(int id)
         {
 
@@ -56,6 +56,7 @@ namespace webVTYSvize.Controllers
             ViewBag.gunBes = ParantezIceriginiAyir(yurtdisiTur.gunBes);
             return View(yurtdisiTur);
         }
+        
         static string ParantezIceriginiAyir(string deger)
         {
             // Parantez içindeki ifadeyi bulmak için bir düzenli ifade kullanın
@@ -67,13 +68,9 @@ namespace webVTYSvize.Controllers
             {
                 return match.Groups[1].Value;
             }
-            else
-            {
-                // Eğer parantez içinde bir ifade yoksa, null döndürün
-                return null;
-            }
-        }
 
+            return null;
+        }
 
     }
 }

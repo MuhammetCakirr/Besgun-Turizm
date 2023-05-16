@@ -20,6 +20,7 @@ namespace webVTYSvize.Controllers
             _context = context;
         }
 
+
         public IActionResult Anasayfa()
         {
             var otel = _context.Otel.OrderByDescending(o => o.puan).FirstOrDefault();
@@ -49,10 +50,13 @@ namespace webVTYSvize.Controllers
             return View();
         }
 
+        
         public IActionResult Hizmetler()
         {
             return View();
         }
+        
+        
         [HttpGet]
         public IActionResult Oteller()
         {
@@ -66,12 +70,13 @@ namespace webVTYSvize.Controllers
 
             return View(oteller);
         }
-
         [HttpPost]
         public IActionResult Oteller(string yıldız, string aralıkMin, string aralıkMax, string[] tatilTemaları, string[] adresler, string sırala, DateTime girisTarihi, DateTime cikisTarihi)
         {
 
             List<OtelView> oteller = _context.OtelView.ToList();
+
+            // hızlı otel ara seçeneği çalıştı
             if (girisTarihi!= DateTime.MinValue)
             {
                 ViewBag.girisTarihi = girisTarihi.ToString("yyyy-MM-dd");
@@ -89,10 +94,6 @@ namespace webVTYSvize.Controllers
                 ViewBag.fiyatCarpan = 1;
             }
            
-
-
-
-
             //Yıldız değerine göre arama işlemi
             if (yıldız != null)
             {
@@ -137,6 +138,7 @@ namespace webVTYSvize.Controllers
                 }
                 oteller = temaOtel;
             }
+           
             // adrese göre filtreleem
             if (adresler != null && adresler.Count() > 0)
             {
@@ -147,6 +149,7 @@ namespace webVTYSvize.Controllers
                 }
                 oteller = bölgeTekneTurları;
             }
+            
             //Sıralama işlemi
             if (sırala != null)
             {
@@ -176,9 +179,10 @@ namespace webVTYSvize.Controllers
 
             }
 
-
             return View(oteller);
         }
+        
+        
         [HttpGet]
         public IActionResult TekneTurları()
         {
@@ -216,6 +220,7 @@ namespace webVTYSvize.Controllers
             
             List<TekneTurView> tekneTurları = _context.TekneTurView.ToList();
 
+            // fiyat aralığına göre filtreleme
             if (minFiyat!=null)
             {
                 tekneTurları = tekneTurları.Where(t => int.Parse(minFiyat) <= t.fiyat).ToList();
@@ -224,10 +229,14 @@ namespace webVTYSvize.Controllers
             {
                 tekneTurları = tekneTurları.Where(t =>  t.fiyat <=int.Parse(maxFiyat)).ToList();
             }
+            
+            // vize durumu kontrolüne göre filtreleme
             if (vizeDurumu!=null)
             {
                 tekneTurları = tekneTurları.Where(t => t.vizeDurumu == vizeDurumu).ToList();
             }
+            
+            // bölgelere göre filtreleme
             if (bölgeler!=null && bölgeler.Count()>0)
             {
                 List<TekneTurView> bölgeTekneTurları = new List<TekneTurView>();
@@ -258,9 +267,12 @@ namespace webVTYSvize.Controllers
                 }
 
             }
+           
             return View(tekneTurları);
         }
 
+        
+        
         [HttpGet]
         public IActionResult YurtdisiTurlar()
         {
@@ -298,6 +310,7 @@ namespace webVTYSvize.Controllers
             
             List<YurtdisiTurView> yurtdisiTurlar = _context.YurtdisiTurView.ToList();
 
+            // fiyat aralığına göre filtreleme
             if (minFiyat != null)
             {
                 yurtdisiTurlar = yurtdisiTurlar.Where(t => int.Parse(minFiyat) <= t.fiyat).ToList();
@@ -306,10 +319,14 @@ namespace webVTYSvize.Controllers
             {
                 yurtdisiTurlar = yurtdisiTurlar.Where(t => t.fiyat <= int.Parse(maxFiyat)).ToList();
             }
+
+            // vize durumu kontrolüne göre filtreleme
             if (vizeDurumu != null)
             {
                 yurtdisiTurlar = yurtdisiTurlar.Where(t => t.vizeDurumu == vizeDurumu).ToList();
             }
+
+            // bölgelere göre filtreleme
             if (bölgeler != null && bölgeler.Count() > 0)
             {
                 List<YurtdisiTurView> bölgeTekneTurları = new List<YurtdisiTurView>();
@@ -319,6 +336,7 @@ namespace webVTYSvize.Controllers
                 }
                 yurtdisiTurlar = bölgeTekneTurları;
             }
+           
             //Sıralama işlemi
             if (sırala != null)
             {
@@ -339,8 +357,11 @@ namespace webVTYSvize.Controllers
                 }
 
             }
+           
             return View(yurtdisiTurlar);
         }
+        
+        
         public IActionResult İletişim()
         {
             return View();

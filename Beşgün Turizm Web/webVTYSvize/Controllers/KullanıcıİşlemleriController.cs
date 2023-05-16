@@ -19,6 +19,8 @@ namespace webVTYSvize.Controllers
             _logger = logger;
             _context = context;
         }
+        
+        
         [HttpGet]
         public IActionResult Kayıt()
         {
@@ -66,12 +68,13 @@ namespace webVTYSvize.Controllers
             return View();
 
         }
+        
+        
         [HttpGet]
         public IActionResult Ayarlar()
         {
             if (isLogin)
             {
-                
                 List<RezervasyonView> rezervasyonlar = _context.RezervasyonView.Where(r => r.idMusteri==_musteri.idMusteri).ToList();
                 List<RezervasyonViewModel> rezervasyonlarView = new List<RezervasyonViewModel>();
                 foreach (var rezervasyon in rezervasyonlar)
@@ -96,9 +99,8 @@ namespace webVTYSvize.Controllers
                 ViewBag.Message = "Merhabalar  " + _musteri.adi;
                 ViewBag.sifre = _musteri.sifre;
                 ViewBag.dogumTarihi = _musteri.dogumTarihi;
-                 return View(rezervasyonlarView);
-              
-
+                
+                return View(rezervasyonlarView);  
             }
             return RedirectToAction("Kayıt");
         }
@@ -220,7 +222,6 @@ namespace webVTYSvize.Controllers
             }
             return View();
         }
-
         [HttpPost]
         public IActionResult Rezervasyon(string bilgiler, string yetiskinSayisi , string cocukSayisi,string empty )
         {
@@ -251,6 +252,7 @@ namespace webVTYSvize.Controllers
             return View();
         }
 
+       
         [HttpGet]
         public IActionResult RezervasyonDüzenle(string rezervasyonDetay) 
         {
@@ -321,5 +323,6 @@ namespace webVTYSvize.Controllers
 
             return RedirectToAction("Ayarlar");
         }
+   
     }
 }

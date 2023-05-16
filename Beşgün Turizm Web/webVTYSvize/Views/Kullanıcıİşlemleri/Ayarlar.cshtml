@@ -102,7 +102,6 @@
                     </form>
                 </div>
 
-
                 <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12" id="divHesabim">
 
                     <div class="p-2 bg-light bg-opacity-50 rounded">
@@ -136,7 +135,7 @@
                                     <label for="sifre">Şifre</label>
                                 </div>
                                 <div class="form-floating">
-                                    <input type="date" class="form-control formdogumTarihi myElement" id="dogumTarihi" name="dogumTarihi" value="@ViewBag.dogumTarihi.ToString("yyyy-MM-dd")" min="1923-01-01" max="2030-12-31" required style="width: 13.5rem;">
+                                    <input type="date" class="form-control formdogumTarihi myElement" id="dogumTarihi" name="dogumTarihi" value="@ViewBag.dogumTarihi.ToString("yyyy-MM-dd")" min="1923-01-01" max="@DateTime.Now.ToString("yyyy-MM-dd")" required style="width: 13.5rem;">
                                     <label for="dogumTarihi">Doğum Tarihi</label>
                                 </div>
                             </div>
@@ -147,7 +146,6 @@
                         </form>
                     </div>
                 </div>
-
 
                 <!-- Rezervasyonlarım -->
                 <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 position-absolute top-50 start-50 translate-middle" id="divRezervasyon">
@@ -190,11 +188,11 @@
                                                         </div>
                                                         <div class="d-flex lh-1">
                                                             <p class="fw-bold me-3">Başlangıç Tarihi:</p>
-                                                            <p>@rezervasyon.Rezervasyon.girisTarihi.ToString("yyyy-MM-dd")</p>
+                                                            <p>@rezervasyon.Rezervasyon.girisTarihi.ToString("dd-MM-yyyy")</p>
                                                         </div>
                                                         <div class="d-flex lh-1">
                                                             <p class="fw-bold me-3">Bitiş Tarihi:</p>
-                                                            <p>@rezervasyon.Rezervasyon.cikisTarihi.ToString("yyyy-MM-dd")</p>
+                                                            <p>@rezervasyon.Rezervasyon.cikisTarihi.ToString("dd-MM-yyyy")</p>
                                                         </div>
                                                         <div class="d-flex lh-1">
                                                             <p class="fw-bold me-3">Fiyatı:</p>
@@ -220,8 +218,6 @@
                         </div>
                     </form>
                 </div>
-
-
 
             </div>
         </div>
