@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- Bootstrap CSS -->
@@ -18,55 +18,52 @@
 </head>
 <body>
 
-
-
-   
     <header class="main-header-ayarlar secili-active">
-          <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
-                <div class="container-fluid">
-                    <h1 class="brand">
-                        <i class="fa-solid fa-plane-departure" style="color: #1a1a19;"></i>
-                    </h1>
-                   <a class="navbar-brand ms-3" asp-action="Anasayfa" asp-controller="Anasayfa">Beşgün Turizm</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+            <div class="container-fluid">
+                <h1 class="brand">
+                    <i class="fa-solid fa-plane-departure" style="color: #1a1a19;"></i>
+                </h1>
+                <a class="navbar-brand ms-3" asp-action="Anasayfa" asp-controller="Anasayfa">Beşgün Turizm</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                            <li class="nav-item">
-                                <a class="nav-link"  asp-controller="Anasayfa" asp-action="Anasayfa" >Ana Sayfa</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-controller="Anasayfa" asp-action="Hizmetler">Hizmetler</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-controller="Anasayfa" asp-action="Oteller">Oteller</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-controller="Anasayfa" asp-action="TekneTurları">Tekne Turları</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-controller="Anasayfa" asp-action="YurtdisiTurlar">Yurtdışı Turlar</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-controller="Anasayfa" asp-action="İletişim">İletişim</a>
-                            </li>
-                        </ul>
-                    
-                        <a asp-controller="Kullanıcıİşlemleri" asp-action="Kayıt" class="btn border border-dark rounded-pill ms-auto me-2"><i class="fa-solid fa-arrow-right-to-bracket me-2"></i>Giriş Yap ya da Kayıt Ol</a>
-                        <a asp-controller="Kullanıcıİşlemleri" asp-action="Ayarlar" class="active btn border border-dark rounded-circle me-2"><i class="fa-solid fa-gear"></i></a>
-                    
-                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="Anasayfa">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="Hizmetler">Hizmetler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="Oteller">Oteller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="TekneTurları">Tekne Turları</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="YurtdisiTurlar">Yurtdışı Turlar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Anasayfa" asp-action="İletişim">İletişim</a>
+                        </li>
+                    </ul>
+
+                    <a asp-controller="Kullanıcıİşlemleri" asp-action="Kayıt" class="btn border border-dark rounded-pill ms-auto me-2"><i class="fa-solid fa-arrow-right-to-bracket me-2"></i>Giriş Yap ya da Kayıt Ol</a>
+                    <a asp-controller="Kullanıcıİşlemleri" asp-action="Ayarlar" class="active btn border border-dark rounded-circle me-2"><i class="fa-solid fa-gear"></i></a>
+
                 </div>
-            </nav>
-  
-          <div class="container text-dark">
+            </div>
+        </nav>
+
+        <div class="container text-dark">
             <h3 class="message" style=" color: antiquewhite;font-size: 2rem;opacity: 0.8;">@ViewBag.Message</h3>
-          
+
             <div class="row g-4 d-flex justify-content-center mt-5">
-                   
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
-                        <form asp-action="Ayarlar" asp-controller="Kullanıcıİşlemleri" method="post">
+
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                    <form asp-action="Ayarlar" asp-controller="Kullanıcıİşlemleri" method="post">
                         @Html.AntiForgeryToken()
                         <div class="p-2 bg-light bg-opacity-50 rounded me-3">
                             <div class="d-flex align-items-center border-bottom p-2">
@@ -102,24 +99,24 @@
                                 </button>
                             </div>
                         </div>
-                        </form>
-                    </div>
-                   
-                   
-                    <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12" id="divHesabim">
-                                   
-                        <div class="p-2 bg-light bg-opacity-50 rounded">
-                            <form id="myForm" method="post" asp-action="Ayarlar" asp-controller="Kullanıcıİşlemleri">
+                    </form>
+                </div>
+
+
+                <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12" id="divHesabim">
+
+                    <div class="p-2 bg-light bg-opacity-50 rounded">
+                        <form id="myForm" method="post" asp-action="Ayarlar" asp-controller="Kullanıcıİşlemleri">
                             <h2 class="border-bottom p-2">Hesabım</h2>
                             <h5 class="p-2">Bilgileriniz</h5>
-                            
+
                             <div class="d-flex justify-content-center align-items-center p-3">
                                 <div class="form-floating me-3">
-                                    <input type="name" class="form-control formisim myElement" id="adi" name="adi" value="@Model[0].Rezervasyon.adi" required>
+                                    <input type="text" class="form-control formisim myElement" id="adi" name="adi" value="@Model[0].Rezervasyon.adi" required>
                                     <label for="adi">İsim</label>
                                 </div>
                                 <div class="form-floating">
-                                    <input type="surname" class="form-control formsoyad myElement" id="soyadi" name="soyadi" value="@Model[0].Rezervasyon.soyadi" required>
+                                    <input type="text" class="form-control formsoyad myElement" id="soyadi" name="soyadi" value="@Model[0].Rezervasyon.soyadi" required>
                                     <label for="soyadi">Soyisim</label>
                                 </div>
                             </div>
@@ -145,59 +142,67 @@
                             </div>
 
                             <div class="text-center ms-auto me-2">
-                               <button class="btn btn-dark p-2" type="submit" style="width: 10rem;">Güncelle</button>
+                                <button class="btn btn-dark p-2" type="submit" style="width: 10rem;">Güncelle</button>
                             </div>
-                            </form>
-                        </div>
+                        </form>
                     </div>
-                   
-                   
-                     <!-- Rezervasyonlarım -->
-                    <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 position-absolute top-50 start-50 translate-middle" id="divRezervasyon">
-                        <form asp-action="RezervasyonDüzenle" asp-controller="Kullanıcıİşlemleri" method="get">
+                </div>
+
+
+                <!-- Rezervasyonlarım -->
+                <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 position-absolute top-50 start-50 translate-middle" id="divRezervasyon">
+                    <form asp-action="RezervasyonDüzenle" asp-controller="Kullanıcıİşlemleri" method="get">
                         @Html.AntiForgeryToken()
                         <div class="p-2 bg-light bg-opacity-50 rounded">
                             <h2 class="border-bottom p-2">Rezervasyonlarım</h2>
 
                             <div class="row p-3 d-flex align-items-center">
-                            
+
                                 <div class="card shadow-sm rounded mb-2">
                                     <div class="row">
                                         @foreach (RezervasyonViewModel rezervasyon in Model)
                                         {
                                             <div class="d-flex justify-content-between p-2">
                                                 <div class="d-flex me-3">
-                                                <img src="@rezervasyon.HizmetBase.resimUrl" class="img-fluid card-img-top me-2" style="width: 12rem;" alt="">
-                                                <div>
-                                                    <div class="d-flex lh-1">
-                                                        <p class="fw-bold me-3">Yetişkin Sayısı:</p>
-                                                        <p>@rezervasyon.Rezervasyon.yetiskinSayisi</p>
-                                                    </div>
-                                                    <div class="d-flex lh-1">
-                                                        <p class="fw-bold me-3">Çocuk Sayısı:</p>
-                                                        <p>@rezervasyon.Rezervasyon.cocukSayisi</p>
-                                                    </div>
-                                                    <div class="d-flex lh-1">
-                                                        <p class="fw-bold me-3">Telefon:</p>
-                                                        <p>@rezervasyon.Rezervasyon.telefonNumarasi</p>
-                                                    </div>
-                                                    <div class="d-flex lh-1">
-                                                        <p class="fw-bold me-3">İsim Soyisim:</p>
-                                                        <p>@rezervasyon.Rezervasyon.adi @rezervasyon.Rezervasyon.soyadi</p>
-                                                    </div>
-                                                </div>
+                                                    <img src="@rezervasyon.HizmetBase.resimUrl" class="img-fluid card-img-top me-2" style="width: 14rem;" alt="">
                                                     <div>
                                                         <div class="d-flex lh-1">
-                                                            <p class="fw-bold me-3">Rezervasyon Tarihi:</p>
-                                                            <p>@rezervasyon.Rezervasyon.tarihi</p>
+                                                            <p class="fw-bold me-3">Yetişkin Sayısı:</p>
+                                                            <p>@rezervasyon.Rezervasyon.yetiskinSayisi</p>
                                                         </div>
+                                                        <div class="d-flex lh-1">
+                                                            <p class="fw-bold me-3">Çocuk Sayısı:</p>
+                                                            <p>@rezervasyon.Rezervasyon.cocukSayisi</p>
+                                                        </div>
+                                                        <div class="d-flex lh-1">
+                                                            <p class="fw-bold me-3">Telefon:</p>
+                                                            <p>@rezervasyon.Rezervasyon.telefonNumarasi</p>
+                                                        </div>
+                                                        <div class="d-flex lh-1">
+                                                            <p class="fw-bold me-3">İsim Soyisim:</p>
+                                                            <p>@rezervasyon.Rezervasyon.adi @rezervasyon.Rezervasyon.soyadi</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
                                                         <div class="d-flex lh-1">
                                                             <p class="fw-bold me-3">Rezervasyon Adı:</p>
                                                             <p>@rezervasyon.HizmetBase.adi</p>
                                                         </div>
                                                         <div class="d-flex lh-1">
-                                                            <p class="fw-bold me-3">Rezervasyon Fiyatı:</p>
+                                                            <p class="fw-bold me-3">Başlangıç Tarihi:</p>
+                                                            <p>@rezervasyon.Rezervasyon.girisTarihi.ToString("yyyy-MM-dd")</p>
+                                                        </div>
+                                                        <div class="d-flex lh-1">
+                                                            <p class="fw-bold me-3">Bitiş Tarihi:</p>
+                                                            <p>@rezervasyon.Rezervasyon.cikisTarihi.ToString("yyyy-MM-dd")</p>
+                                                        </div>
+                                                        <div class="d-flex lh-1">
+                                                            <p class="fw-bold me-3">Fiyatı:</p>
                                                             <p>@rezervasyon.HizmetBase.fiyat TL</p>
+                                                        </div>
+                                                        <div class="d-flex lh-1">
+                                                            <p class="fw-bold me-3">Rezervasyon Yapılan Tarih:</p>
+                                                            <p>@rezervasyon.Rezervasyon.tarihi</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -206,25 +211,23 @@
                                                 <button type="submit" name="rezervasyonDetay" value="@rezervasyon.Rezervasyon.idRezervasyon" class="btn btn-outline-dark me-3 w-50">Düzenle / İptal Et !</button>
                                             </div>
                                         }
-                                   
+
                                     </div>
                                 </div>
-                            
+
                             </div>
-              
+
                         </div>
-                        </form>
-                    </div>
-                   
-               
-              
+                    </form>
+                </div>
+
+
+
             </div>
-          </div>
+        </div>
     </header>
 
-
-  
-   <footer class="footer bg-light mt-2">
+    <footer class="footer bg-light mt-2">
         <div class="container">
             <div class="row g-2 p-2 d-flex justify-content-center">
 
@@ -259,10 +262,10 @@
                 </div>
             </div>
         </div>
-   </footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/ayarlar.js"></script>
-    
+
 </body>
 </html>

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- Bootstrap CSS -->
@@ -21,20 +21,20 @@
 </head>
 <body>
 
-  <header class="main-header-oteller secili-active">
-      <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+    <header class="main-header-oteller secili-active">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
             <div class="container-fluid">
                 <h1 class="brand">
                     <i class="fa-solid fa-plane-departure" style="color: #1a1a19;"></i>
                 </h1>
                 <a class="navbar-brand ms-3" asp-action="Anasayfa" asp-controller="Anasayfa">Beşgün Turizm</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
-                            <a class="nav-link "   asp-controller="Anasayfa" asp-action="Anasayfa" >Ana Sayfa</a>
+                            <a class="nav-link " asp-controller="Anasayfa" asp-action="Anasayfa">Ana Sayfa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " asp-controller="Anasayfa" asp-action="Hizmetler">Hizmetler</a>
@@ -52,370 +52,370 @@
                             <a class="nav-link " asp-controller="Anasayfa" asp-action="İletişim">İletişim</a>
                         </li>
                     </ul>
-                    
+
                     <a asp-controller="Kullanıcıİşlemleri" asp-action="Kayıt" class="btn border border-dark rounded-pill ms-auto me-2"><i class="fa-solid fa-arrow-right-to-bracket me-2"></i>Giriş Yap ya da Kayıt Ol</a>
                     <a asp-controller="Kullanıcıİşlemleri" asp-action="Ayarlar" class="btn border border-dark rounded-circle me-2"><i class="fa-solid fa-gear"></i></a>
-                    
+
                 </div>
             </div>
         </nav>
 
-      <div class="content-oteller">
-        <h1>Oteller</h1>
-         <div class="container">
-             <form asp-action="Oteller" asp-controller="Anasayfa" method="post">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <section class="col-lg-3 col-sm-12 p-3">
-                        <!-- Otel Ara -->
-                        <div class="input-group flex-nowrap">
-                            <span class="input-group-text border-start border-warning"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <input type="text" class="form-control" placeholder="Nereye gitmek istersin?" aria-label="Username" aria-describedby="addon-wrapping">
-                        </div>
-                    </section>
+        <div class="content-oteller">
+            <h1>Oteller</h1>
+            <div class="container">
+                <form asp-action="Oteller" asp-controller="Anasayfa" method="post">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <section class="col-lg-3 col-sm-12 p-3">
+                            <!-- Otel Ara -->
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text border-start border-warning"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control" placeholder="Nereye gitmek istersin?" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </section>
 
-                    <section class="col-lg-3 col-sm-12 p-3">
-                        <!-- Giriş tarihi -->
-                        <div class="input-group flex-nowrap">
-                            <input class="form-control border-start border-warning" type="date" id="girisTarihi" name="girisTarihi"
-                            value="@ViewBag.girisTarihi" >
-                        </div>
-                    </section>
+                        <section class="col-lg-3 col-sm-12 p-3">
+                            <!-- Giriş tarihi -->
+                            <div class="input-group flex-nowrap">
+                                <input class="form-control border-start border-warning" type="date" id="girisTarihi" name="girisTarihi"
+                                       value="@ViewBag.girisTarihi">
+                            </div>
+                        </section>
 
-                    <section class="col-lg-3 col-sm-12 p-3">
-                        <!-- Çıkış tarihi -->
-                        <div class="input-group flex-nowrap">
-                            <input class="form-control border-start border-warning" type="date" id="cikisTarihi" name="cikisTarihi"
-                            value="@ViewBag.cikisTarihi">
-                        </div>
-                    </section>
+                        <section class="col-lg-3 col-sm-12 p-3">
+                            <!-- Çıkış tarihi -->
+                            <div class="input-group flex-nowrap">
+                                <input class="form-control border-start border-warning" type="date" id="cikisTarihi" name="cikisTarihi"
+                                       value="@ViewBag.cikisTarihi">
+                            </div>
+                        </section>
 
-                    <section class="col-12 p-3">
-                        <button type="submit"  class="btn btn-outline-light">Otel Ara</button>
-                    </section>
+                        <section class="col-12 p-3">
+                            <button type="submit" class="btn btn-outline-light">Otel Ara</button>
+                        </section>
 
-                </div>
-             </form>
-              
+                    </div>
+                </form>
+
             </div>
-      </div>
-      
-  </header>
-
-  <main>
-    <div class="container">
-      <div class="row g-4 p-2 d-flex justify-content-center">
-        <div class="col-8 p-2">
-          <h3 class="mt-2">Tatil Köyü & Resort Oteller ve Şehir Otelleri</h3>
         </div>
 
-        <div class="col-4 p-2">
-          <div class="mt-2">
-             <form method="post" asp-action="Oteller" asp-controller="Anasayfa">
-                <div class="input-group dropdown">
-                  <button type="submit" class="btn border rounded-pill ms-auto" data-bs-auto-close="false" data-bs-toggle="dropdown">
-                    <i class="fa-solid fa-arrow-up-short-wide me-3"></i>Sırala
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <button type="submit" value="fiyat_azdan_coka" name="sırala" class="dropdown-item">
-                        <p>Fiyat Az'dan Çok'a</p>
-                      </button>
-                    </li>
-                    <li>
-                      <button type="submit" value="fiyat_coktan_aza" name="sırala" class="dropdown-item">
-                        <p>Fiyat Çok'tan Az'a</p>
-                      </button>
-                    </li>
-                    <li>
-                      <button type="submit" value="puan_azdan_coka" name="sırala" class="dropdown-item">
-                        <p>Puan Az'dan Çok'a</p>
-                      </button>
-                    </li>
-                    <li>
-                      <button type="submit" value="puan_coktan_aza" name="sırala" class="dropdown-item">
-                        <p>Puan Çok'tan Az'a</p>
-                      </button>
-                    </li>
-                  </ul>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row g-4 p-2 d-flex justify-content-center">
+                <div class="col-8 p-2">
+                    <h3 class="mt-2">Tatil Köyü & Resort Oteller ve Şehir Otelleri</h3>
                 </div>
-             </form>
-          </div>
-        </div>
-      </div>
 
-      <div class="row g-4 p-2 d-flex justify-content-center">
-
-        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 mt-4">
-          <div class="p-3">
-            <div class="boxshadow">
-                 <form asp-action="Oteller" asp-controller="Anasayfa">
-                      <div class="card filters">
-
-                        <div class="filter-box">
-                          <header class="card-header">
-                            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_box1">
-                              <i class="fa fa-chevron-down"></i>Puana Göre Filtrele
-                            </a>
-                          </header>
-                          <div class="collapse show" id="collapse_box1">
-                            <div class="card-body">
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" value="9" name="yıldız" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    9 ve üstü puanı olan oteller
-                                  </label>
-                                </div>
-                              </div>
-
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" value="8" name="yıldız" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    8 ve üstü puanı olan oteller
-                                  </label>
-                                </div>
-                              </div>
-
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" value="7" name="yıldız" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    7 ve üstü puanı olan oteller
-                                  </label>
-                                </div>
-                              </div>
-
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" value="6" name="yıldız" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    6 ve üstü puanı olan oteller
-                                  </label>
-                                </div>
-                              </div>
-
+                <div class="col-4 p-2">
+                    <div class="mt-2">
+                        <form method="post" asp-action="Oteller" asp-controller="Anasayfa">
+                            <div class="input-group dropdown">
+                                <button type="submit" class="btn border rounded-pill ms-auto" data-bs-auto-close="false" data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-arrow-up-short-wide me-3"></i>Sırala
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <button type="submit" value="fiyat_azdan_coka" name="sırala" class="dropdown-item">
+                                            <p>Fiyat Az'dan Çok'a</p>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="submit" value="fiyat_coktan_aza" name="sırala" class="dropdown-item">
+                                            <p>Fiyat Çok'tan Az'a</p>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="submit" value="puan_azdan_coka" name="sırala" class="dropdown-item">
+                                            <p>Puan Az'dan Çok'a</p>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="submit" value="puan_coktan_aza" name="sırala" class="dropdown-item">
+                                            <p>Puan Çok'tan Az'a</p>
+                                        </button>
+                                    </li>
+                                </ul>
                             </div>
-                          </div>
-                        </div>
-
-                        <div class="filter-box">
-                          <header class="card-header">
-                            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_box2">
-                              <i class="fa fa-chevron-down"></i>Fiyat Aralığına Göre Filtrele
-                            </a>
-                          </header>
-                          <div class="collapse show" id="collapse_box1">
-                            <div class="card-body">
-                              <div class="menu scroll">
-                                <input class="form-control" type="text" placeholder="Min Fiyat" name="aralıkMin" aria-label="default input example">
-                              </div>
-
-                              <div class="menu scroll mt-2">
-                                <input class="form-control" type="text" placeholder="Max Fiyat" name="aralıkMax" aria-label="default input example">
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="filter-box">
-                          <header class="card-header">
-                            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_box1">
-                              <i class="fa fa-chevron-down"></i>Tatil Temasına Göre Filtrele
-                            </a>
-                          </header>
-                          <div class="collapse show" id="collapse_box1">
-                            <div class="card-body">
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="Balayı Otel" name="tatilTemaları" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                     Balayı Otelleri 
-                                  </label>
-                                </div>
-                              </div>
-
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="Termal Otel" name="tatilTemaları" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Termal Oteller
-                                  </label>
-                                </div>
-                              </div>
-
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="Butik Otel" name="tatilTemaları" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Butik Oteller  
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="Şehir Otel" name="tatilTemaları" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Şehir Otelleri 
-                                  </label>
-                                </div>
-                              </div>
-
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="Tatil Köyü" name="tatilTemaları" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Tatil Köyleri
-                                  </label>
-                                </div>
-                              </div>
-
-
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="filter-box">
-                          <header class="card-header">
-                            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_box1">
-                              <i class="fa fa-chevron-down"></i>Bölgeye Göre Filtrele
-                            </a>
-                          </header>
-                          <div class="collapse show" id="collapse_box1">
-                            <div class="card-body">
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="Muğla" name="adresler" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Muğla 
-                                  </label>
-                                </div>
-                              </div>
-
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="Antalya" name="adresler" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Antalya 
-                                  </label>
-                                </div>
-                              </div>
-
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="Samsun" name="adresler" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Samsun
-                                  </label>
-                                </div>
-                              </div>
-
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="İstanbul" name="adresler" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                     İstanbul 
-                                  </label>
-                                </div>
-                              </div>
-
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="Bolu" name="adresler" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Bolu 
-                                  </label>
-                                </div>
-                              </div>
-
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="Bursa" name="adresler" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Bursa 
-                                  </label>
-                                </div>
-                              </div>
-
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="İzmir" name="adresler" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    İzmir
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="menu scroll">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="Sakarya" name="adresler" id="flexCheckDefault">
-                                  <label class="form-check-label" for="flexCheckDefault">
-                                    Sakarya
-                                  </label>
-                                </div>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="p-3">
-                          <button class="btn btn-outline-warning p-2 w-100">Uygula</button>
-                        </div>
-
-                      </div>
-                 </form>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-       
-        <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12">
-          @foreach (OtelView otel in Model)
-          {
-              <form asp-action="OtelDetay" asp-controller="Hizmet">
-                 <button class="btn btn_oteller" type="submit" name="bilgiler" value="@otel.idOtel?@ViewBag.girisTarihi?@ViewBag.cikisTarihi">
-                  <div class="card shadow-sm rounded">
-                   <div class="row g-3">
-                     <div class="col-md-5">
-                       <img src="@otel.resimUrl" class="card-img-top img-fluid rounded-start p-3" alt="...">
-                     </div>
-                     <div class="col-md-7">
-                       <div class="d-flex align-items-center">
-                         <div class="card-body">
-                           <h3 class="card-title">@otel.adi</h3>
-                           <div class="d-flex align-items-center">
-                             <i class="fa-solid fa-location-dot fa-xl"></i>
-                             <p class="me-auto ms-2 fs-6 mt-3">@otel.adres</p>
-                           </div>
-                           <div class="d-flex align-items-center">
-                             <i class="fa-solid fa-moon fa-xl"></i>
-                             <p class="me-auto ms-2 fs-6 mt-3">@ViewBag.gunSayisi</p>
-                           </div>
-                           <div class="d-flex align-items-center">
-                             <i class="fa-solid fa-calendar-days fa-xl"></i>
-                             <p class="me-auto ms-2 fs-6 mt-3">@ViewBag.girisTarihi  |  @ViewBag.cikisTarihi arasında </p>
-                           </div>
-                         </div>
-                         <div class="p-2 bg-light ms-auto mt-auto me-2 mb-2">
-                              <p class="rounded text-black"><i class="fa-solid fa-umbrella-beach"></i> @otel.tema</p>
-                              <p class="bg-danger rounded text-white"><i class="fa-solid fa-star me-2"></i>@otel.puan</p>
-                           <p><i class="fa-solid fa-circle-arrow-right me-2"></i>@(otel.fiyat * ViewBag.fiyatCarpan) TL</p>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                  </div>
-                </button>
 
-              </form> 
-          }
-        </div>
-       
-      </div>
-    </div>
-  </main>
+            <div class="row g-4 p-2 d-flex justify-content-center">
 
-   <footer class="footer bg-light mt-2">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 mt-4">
+                    <div class="p-3">
+                        <div class="boxshadow">
+                            <form asp-action="Oteller" asp-controller="Anasayfa">
+                                <div class="card filters">
+
+                                    <div class="filter-box">
+                                        <header class="card-header">
+                                            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_box1">
+                                                <i class="fa fa-chevron-down"></i>Puana Göre Filtrele
+                                            </a>
+                                        </header>
+                                        <div class="collapse show" id="collapse_box1">
+                                            <div class="card-body">
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" value="9" name="yıldız" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            9 ve üstü puanı olan oteller
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" value="8" name="yıldız" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            8 ve üstü puanı olan oteller
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" value="7" name="yıldız" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            7 ve üstü puanı olan oteller
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" value="6" name="yıldız" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            6 ve üstü puanı olan oteller
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter-box">
+                                        <header class="card-header">
+                                            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_box2">
+                                                <i class="fa fa-chevron-down"></i>Fiyat Aralığına Göre Filtrele
+                                            </a>
+                                        </header>
+                                        <div class="collapse show" id="collapse_box1">
+                                            <div class="card-body">
+                                                <div class="menu scroll">
+                                                    <input class="form-control" type="text" placeholder="Min Fiyat" name="aralıkMin" aria-label="default input example">
+                                                </div>
+
+                                                <div class="menu scroll mt-2">
+                                                    <input class="form-control" type="text" placeholder="Max Fiyat" name="aralıkMax" aria-label="default input example">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter-box">
+                                        <header class="card-header">
+                                            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_box1">
+                                                <i class="fa fa-chevron-down"></i>Tatil Temasına Göre Filtrele
+                                            </a>
+                                        </header>
+                                        <div class="collapse show" id="collapse_box1">
+                                            <div class="card-body">
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="Balayı Otel" name="tatilTemaları" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Balayı Otelleri
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="Termal Otel" name="tatilTemaları" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Termal Oteller
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="Butik Otel" name="tatilTemaları" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Butik Oteller
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="Şehir Otel" name="tatilTemaları" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Şehir Otelleri
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="Tatil Köyü" name="tatilTemaları" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Tatil Köyleri
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter-box">
+                                        <header class="card-header">
+                                            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_box1">
+                                                <i class="fa fa-chevron-down"></i>Bölgeye Göre Filtrele
+                                            </a>
+                                        </header>
+                                        <div class="collapse show" id="collapse_box1">
+                                            <div class="card-body">
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="Muğla" name="adresler" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Muğla
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="Antalya" name="adresler" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Antalya
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="Samsun" name="adresler" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Samsun
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="İstanbul" name="adresler" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            İstanbul
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="Bolu" name="adresler" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Bolu
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="Bursa" name="adresler" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Bursa
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="İzmir" name="adresler" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            İzmir
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="menu scroll">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="Sakarya" name="adresler" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Sakarya
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="p-3">
+                                        <button class="btn btn-outline-warning p-2 w-100">Uygula</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12">
+                    @foreach (OtelView otel in Model)
+                    {
+                        <form asp-action="OtelDetay" asp-controller="Hizmet">
+                            <button class="btn btn_oteller" type="submit" name="bilgiler" value="@otel.idOtel?@ViewBag.girisTarihi?@ViewBag.cikisTarihi">
+                                <div class="card shadow-sm rounded">
+                                    <div class="row g-3">
+                                        <div class="col-md-5">
+                                            <img src="@otel.resimUrl" class="card-img-top img-fluid rounded-start p-3" alt="...">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="d-flex align-items-center">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">@otel.adi</h3>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-location-dot fa-xl"></i>
+                                                        <p class="me-auto ms-2 fs-6 mt-3">@otel.adres</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-moon fa-xl"></i>
+                                                        <p class="me-auto ms-2 fs-6 mt-3">@ViewBag.gunSayisi</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-calendar-days fa-xl"></i>
+                                                        <p class="me-auto ms-2 fs-6 mt-3">@ViewBag.girisTarihi  |  @ViewBag.cikisTarihi arasında </p>
+                                                    </div>
+                                                </div>
+                                                <div class="p-2 bg-light ms-auto mt-auto me-2 mb-2 ">
+                                                    <p class="rounded text-black"><i class="fa-solid fa-umbrella-beach"></i> @otel.tema</p>
+                                                    <p class="bg-danger rounded text-white"><i class="fa-solid fa-star me-2"></i>@otel.puan</p>
+                                                    <p><i class="fa-solid fa-circle-arrow-right me-2"></i>@(otel.fiyat * ViewBag.fiyatCarpan) TL</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </form>
+                    }
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-light mt-2">
         <div class="container">
             <div class="row g-2 p-2 d-flex justify-content-center">
 
@@ -450,10 +450,10 @@
                 </div>
             </div>
         </div>
-   </footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/anaSayfa.js"></script>
-    
+
 </body>
 </html>

@@ -9,81 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = webVTYSvize
 build_property.RootNamespace = webVTYSvize
-build_property.ProjectDir = C:\Projelerim\c#\webVTYSvize\webVTYSvize\
+build_property.ProjectDir = C:\Users\asus\Desktop\Beşgün Turizm\Beşgün Turizm Web\webVTYSvize\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Projelerim\c#\webVTYSvize\webVTYSvize
+build_property.MSBuildProjectDirectory = C:\Users\asus\Desktop\Beşgün Turizm\Beşgün Turizm Web\webVTYSvize
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Anasayfa/Anasayfa.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Anasayfa/Anasayfa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hc2F5ZmFcQW5hc2F5ZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Anasayfa/Hizmetler.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Anasayfa/Hizmetler.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hc2F5ZmFcSGl6bWV0bGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Anasayfa/Oteller.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Anasayfa/Oteller.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hc2F5ZmFcT3RlbGxlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Anasayfa/TekneTurları.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Anasayfa/TekneTurları.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hc2F5ZmFcVGVrbmVUdXJsYXLEsS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Anasayfa/YurtdisiTurlar.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Anasayfa/YurtdisiTurlar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hc2F5ZmFcWXVydGRpc2lUdXJsYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Anasayfa/İletişim.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Anasayfa/İletişim.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hc2F5ZmFcxLBsZXRpxZ9pbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Hizmet/OtelDetay.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Hizmet/OtelDetay.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGl6bWV0XE90ZWxEZXRheS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Hizmet/TekneTurDetay.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Hizmet/TekneTurDetay.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGl6bWV0XFRla25lVHVyRGV0YXkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Hizmet/YurtdisiTurDetay.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Hizmet/YurtdisiTurDetay.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGl6bWV0XFl1cnRkaXNpVHVyRGV0YXkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Kullanıcıİşlemleri/Ayarlar.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Kullanıcıİşlemleri/Ayarlar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuxLFjxLHEsMWfbGVtbGVyaVxBeWFybGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Kullanıcıİşlemleri/Kayıt.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Kullanıcıİşlemleri/Kayıt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuxLFjxLHEsMWfbGVtbGVyaVxLYXnEsXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Kullanıcıİşlemleri/Rezervasyon.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Kullanıcıİşlemleri/Rezervasyon.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuxLFjxLHEsMWfbGVtbGVyaVxSZXplcnZhc3lvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Kullanıcıİşlemleri/RezervasyonDüzenle.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Kullanıcıİşlemleri/RezervasyonDüzenle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuxLFjxLHEsMWfbGVtbGVyaVxSZXplcnZhc3lvbkTDvHplbmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Shared/Error.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/_ViewImports.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/_ViewStart.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projelerim/c\#/webVTYSvize/webVTYSvize/Views/Shared/_Layout.cshtml]
+[C:/Users/asus/Desktop/Beşgün Turizm/Beşgün Turizm Web/webVTYSvize/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x860bigkgv

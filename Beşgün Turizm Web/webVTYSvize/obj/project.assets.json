@@ -3295,11 +3295,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projelerim\\c#\\webVTYSvize\\webVTYSvize\\webVTYSvize.csproj",
+      "projectUniqueName": "C:\\Users\\asus\\Desktop\\Beşgün Turizm\\Beşgün Turizm Web\\webVTYSvize\\webVTYSvize.csproj",
       "projectName": "webVTYSvize",
-      "projectPath": "C:\\Projelerim\\c#\\webVTYSvize\\webVTYSvize\\webVTYSvize.csproj",
+      "projectPath": "C:\\Users\\asus\\Desktop\\Beşgün Turizm\\Beşgün Turizm Web\\webVTYSvize\\webVTYSvize.csproj",
       "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Projelerim\\c#\\webVTYSvize\\webVTYSvize\\obj\\",
+      "outputPath": "C:\\Users\\asus\\Desktop\\Beşgün Turizm\\Beşgün Turizm Web\\webVTYSvize\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
