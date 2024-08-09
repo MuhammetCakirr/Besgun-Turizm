@@ -8,10 +8,10 @@
  -Rezervasyonlara ve Kullanıcıya ait CRUD işlemleri</p>
 
  <h1>Proje Fotoğrafları</h1>
- <img src="https://github.com/user-attachments/assets/8acfa1da-56b4-4cde-b922-62825a612a99" width="700" height="700">
- <img src="https://github.com/user-attachments/assets/591fbf91-7c84-4714-8b95-f4eeb7ccc3f9" width="700" height="700">
- <img src="https://github.com/user-attachments/assets/db00d2dd-58d6-4f48-8dc4-f49bf4082a78" width="700" height="700">
- <img src="https://github.com/user-attachments/assets/0abded82-eada-42ef-99a9-403f22093bd6" width="700" height="700">
- <img src="https://github.com/user-attachments/assets/a208e0ea-3f6f-48dc-a272-5b89418ba24e" width="700" height="700">
- <img src="https://github.com/user-attachments/assets/ee441fd1-e5c0-4b09-adb2-8e63942add85" width="700" height="700">
- <img src="https://github.com/user-attachments/assets/85b2539e-2078-4b09-8162-50ddaa923cff" width="700" height="700">
+ <img src="https://github.com/user-attachments/assets/8acfa1da-56b4-4cde-b922-62825a612a99" width="1000" height="1000">
+ <img src="https://github.com/user-attachments/assets/591fbf91-7c84-4714-8b95-f4eeb7ccc3f9" width="1000" height="1000">
+ <img src="https://github.com/user-attachments/assets/db00d2dd-58d6-4f48-8dc4-f49bf4082a78" width="1000" height="1000">
+ <img src="https://github.com/user-attachments/assets/0abded82-eada-42ef-99a9-403f22093bd6" width="1000" height="1000">
+ <img src="https://github.com/user-attachments/assets/a208e0ea-3f6f-48dc-a272-5b89418ba24e" width="1000" height="1000">
+ <img src="https://github.com/user-attachments/assets/ee441fd1-e5c0-4b09-adb2-8e63942add85" width="1000" height="1000">
+ <img src="https://github.com/user-attachments/assets/85b2539e-2078-4b09-8162-50ddaa923cff" width="1000" height="1000">
