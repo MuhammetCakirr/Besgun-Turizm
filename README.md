@@ -8,7 +8,7 @@
  -Rezervasyonlara ve Kullanıcıya ait CRUD işlemleri</p>
 
  <h1>Proje Fotoğrafları</h1>
- <img src="https://github.com/user-attachments/assets/8acfa1da-56b4-4cde-b922-62825a612a99" width="200" height="400">
+ <img src="https://github.com/user-attachments/assets/8acfa1da-56b4-4cde-b922-62825a612a99" width="400" height="400">
  <img src="https://github.com/user-attachments/assets/591fbf91-7c84-4714-8b95-f4eeb7ccc3f9" width="200">
  <img src="https://github.com/user-attachments/assets/db00d2dd-58d6-4f48-8dc4-f49bf4082a78" width="200">
  <img src="https://github.com/user-attachments/assets/0abded82-eada-42ef-99a9-403f22093bd6" width="200">
